@@ -5,7 +5,7 @@ if [ $1 = "ui" ]; then
 		base=$(basename ${i%.*})
 		
 		output=views/compiled/${base}.py
-		pyuic5 -x -o $output $i
+		pyside2-uic -x -o $output $i
 
 	done
 

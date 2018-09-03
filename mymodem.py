@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Extend generated template here
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDesktopWidget
+from PySide2.QtWidgets import QApplication, QMainWindow, QDesktopWidget
 from views.compiled.mainwindow import Ui_MainWindow
 
 import sys

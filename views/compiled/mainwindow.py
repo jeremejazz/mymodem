@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'views/ui/mainwindow.ui'
+# Form implementation generated from reading ui file 'views/ui/mainwindow.ui',
+# licensing of 'views/ui/mainwindow.ui' applies.
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created: Mon Sep  3 12:33:54 2018
+#      by: pyside2-uic  running on PySide2 5.11.1a1.dev1535107939337
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -30,6 +32,7 @@ class Ui_MainWindow(object):
         self.tableWidget = QtWidgets.QTableWidget(self.tab_sms)
         self.tableWidget.setColumnCount(3)
         self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(3)
         self.tableWidget.setRowCount(0)
         self.gridLayout.addWidget(self.tableWidget, 1, 1, 1, 6)
         self.btnnewmsg = QtWidgets.QPushButton(self.tab_sms)
@@ -62,14 +65,13 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.btnrefresh.setText(_translate("MainWindow", "Refresh"))
-        self.btnnewmsg.setText(_translate("MainWindow", "New Message"))
-        self.maintab.setTabText(self.maintab.indexOf(self.tab_sms), _translate("MainWindow", "SMS"))
-        self.chkdata.setText(_translate("MainWindow", "Data"))
-        self.chkwifi.setText(_translate("MainWindow", "Wifi"))
-        self.maintab.setTabText(self.maintab.indexOf(self.tab_config), _translate("MainWindow", "Config"))
+        MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
+        self.btnrefresh.setText(QtWidgets.QApplication.translate("MainWindow", "Refresh", None, -1))
+        self.btnnewmsg.setText(QtWidgets.QApplication.translate("MainWindow", "New Message", None, -1))
+        self.maintab.setTabText(self.maintab.indexOf(self.tab_sms), QtWidgets.QApplication.translate("MainWindow", "SMS", None, -1))
+        self.chkdata.setText(QtWidgets.QApplication.translate("MainWindow", "Data", None, -1))
+        self.chkwifi.setText(QtWidgets.QApplication.translate("MainWindow", "Wifi", None, -1))
+        self.maintab.setTabText(self.maintab.indexOf(self.tab_config), QtWidgets.QApplication.translate("MainWindow", "Config", None, -1))
 
 
 if __name__ == "__main__":
